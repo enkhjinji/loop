@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="text"></div>
+    <button id="eo" onclick="evenOdd()">Тэгш сондгой</button>
+    <button id="hd" onclick="hvrd()">Тооны хүрд</button>
+    <button id="dn" onclick="dvn()">Дүн</button>
+
+    <script>
+        evenOdd = function (){
+            eo.style.visibility = 'hidden';
+            hd.style.visibility = 'hidden';
+            dn.style.visibility = 'hidden';
+
+            for (var i = 0; i < 21; i++){
+                if(i % 2 == 0){
+                    document.write(i  + " нь тэгш" +  "<br> ");
+                    
+                } else {
+                    document.write(i  + " нь сондгой" +  "<br> ");
+                }
+            }
+        }
+
+        hvrd = function(){
+            eo.style.visibility = 'hidden';
+            hd.style.visibility = 'hidden';
+            dn.style.visibility = 'hidden';
+
+            for(var i = 1;i < 10; i++){
+                for(var n = 1; n < 10; n++){
+                    document.write( i + " x " + n + " = " + i*n + " <br> ");
+                }
+            }
+        }
+
+        dvn = function(){
+            eo.style.visibility = 'hidden';
+            hd.style.visibility = 'hidden';
+            dn.style.visibility = 'hidden';
+
+            for (var i = 0;i < 101; i++){
+                if (i < 60){
+                    document.write(i + "% нь F" + "<br>");
+                } else if (i < 70){
+                    document.write(i + "% нь D" + "<br>");
+                } else if (i < 80){
+                    document.write(i + "% нь C" + "<br>");
+                } else if (i < 90){
+                    document.write(i + "% нь B" + "<br>");
+                } else if (i < 101){
+                    document.write(i + "% нь A" + "<br>");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
